@@ -1,8 +1,6 @@
-package com.webautomation;
+package com.webautomation.locator;
 
-import java.sql.Time;
 import java.time.Duration;
-
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +15,7 @@ public class SeleniumIntroduction {
     }
 
     public static void loginScenario() throws InterruptedException{
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Escha/Downloads/Documents/chromedriver-win64/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Windows/chromedriver.exe");
 
 
         WebDriver driver = new ChromeDriver();
@@ -44,8 +42,7 @@ public class SeleniumIntroduction {
     }
 
     public static void incorrectPasswordScenario() throws InterruptedException{
-        System.setProperty("webdriver.chrome.driver", "/Users/bytedance/CourseQAAutomation/Web Automation/chromedriver");
-
+        System.setProperty("webdriver.chrome.driver", "C:/Windows/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -79,7 +76,7 @@ public class SeleniumIntroduction {
     }
 
     public static void loginForgotPasswordScenario() throws InterruptedException{
-        System.setProperty("webdriver.chrome.driver", "/Users/bytedance/CourseQAAutomation/Web Automation/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:/Windows/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/locatorspractice/");

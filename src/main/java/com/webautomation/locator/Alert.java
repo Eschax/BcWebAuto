@@ -23,4 +23,9 @@ public class Alert {
 
         Thread.sleep(2000);
     }
+
+    public void accept() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'accept'");
+    }
 }

@@ -106,7 +106,7 @@ public class LocatorPracticeAI {
         // // WebElement countryDelhi = driver.findElement(By.xpath("//div[@id=\'dropdownGroup1\']//div[@class=\'dropdownDiv\']//ul[1]//li//a[@value=\'DEL\']"));
         
         List<WebElement> options = driver.findElements(By.xpath("//div[@id='dropdownGroup1']//child::div[@class='dropdownDiv']//child::ul[1]//child::li"));
-        System.out.println("ini adalah options" + options);
+        // System.out.println("ini adalah options" + options);
 
         for (WebElement element : options){
             // System.out.println("List Country" + element.getText());
@@ -116,10 +116,45 @@ public class LocatorPracticeAI {
             }
         }
 
+        /*
+         * Arrival City
+         */
+
+        List<WebElement> arrivalCity = driver.findElements(By.xpath("(//div[@id='dropdownGroup1']//child::div[@class='dropdownDiv']//child::ul[1])[2]//child::li"));
+        
+        for (WebElement element : arrivalCity){
+            System.out.println("list country" + element.getText());
+            if (element.getText().equals("Chennai (MAA)")) {
+                element.click();
+                break;
+            }
+        }
+
         Thread.sleep(3000);
 
+        //Handle suggestion
+        driver.findElement(By.xpath("(//*[@id='autosuggest'])[1]")).sendKeys("ind");
 
+        Thread.sleep(3000);
 
+        List<WebElement> country = driver.findElements( By.cssSelector("li[class='ui-menu-item'] a"));
+
+        for (WebElement webElement : country) {
+            System.out.println("Ini adalah negara " + webElement.getText());
+            if (webElement.getText().equals("Indonesia")) {
+                webElement.click();
+                break;
+            }
+        }
+
+         //Hande radio button
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
+
+         //Handle checkbox
+        driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).click();
+
+        Thread.sleep(3000);
+        
         driver.quit();
         }
     }

@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -122,14 +123,25 @@ public class TugasLocator {
 
         System.out.println(driver.switchTo().alert().getText());
 
-         // 2. Tunggu alert muncul dan tangkap objek Alert
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         Thread.sleep(2000);
 
-        // 3. Klik OK pada alert
         alert.accept();
         Thread.sleep(2000);
+
+        //mouse hover
+
+        WebElement mousehover = driver.findElement(By.id("mousehover"));
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(mousehover).perform();
+        
+        Thread.sleep(2000);
+
+        WebElement subMenu = driver.findElement(By.linkText("Top"));
+        subMenu.click();
+
 
 
         Thread.sleep(2000);

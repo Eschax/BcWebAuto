@@ -32,16 +32,14 @@ public class LocatorPracticeAI {
 
             driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
-            // Set implicit wait (global wait for elements to be found)
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-            // Use Explicit Wait to wait for the dropdown to be visible
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             WebElement staticDropdown = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_mainContent_DropDownListCurrency"))
             );
 
-            // Select the dropdown element
+            // Select dropdownnya
             Select dropdown = new Select(staticDropdown);
 
             // Print the number of options and the first selected option

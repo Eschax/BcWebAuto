@@ -1,0 +1,9 @@
+com\webautomation\scenario\tugasE2E.class
+com\webautomation\locator\SeleniumIntroduction.class
+com\webautomation\exploration\JavaStream.class
+com\webautomation\locator\LocatorPracticeAI.class
+com\webautomation\scenario\StandAloneTest.class
+com\webautomation\locator\Alert.class
+com\webautomation\locator\HandleWindow.class
+com\webautomation\locator\TugasLocator.class
+com\webautomation\Main.class

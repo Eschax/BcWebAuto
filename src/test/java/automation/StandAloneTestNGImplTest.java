@@ -1,4 +1,4 @@
-package com.webautomation.scenario;
+package automation;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -16,7 +16,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class StandAloneTestNGImpl {
+import com.webautomation.pageobject.LandingPage;
+import com.webautomation.pageobject.ProductListPage;
+
+public class StandAloneTestNGImplTest {
     /*
      * Anotasi
      * dataprovider
@@ -44,35 +47,18 @@ public class StandAloneTestNGImpl {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userEmail")));
 
-         // Scenario Login
-        driver.findElement(By.id("userEmail")).sendKeys(input.get("useremail"));
-        driver.findElement(By.id("userPassword")).sendKeys(input.get("password"));
-
-        driver.findElement(By.className("login-btn")).click();
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.login(input.get("useremail"), input.get("password"));
 
          // Tunggu hingga halaman produk keliatan
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 
         //List Product
-        List<WebElement> listProduct =  driver.findElements(By.cssSelector(".mb-3"));
+        String productName = "ZARA COAT 3";
+        ProductListPage productListPage = new ProductListPage(driver);
+        productListPage.addToCart(productName);
 
-        //cari produk yang sesuai
-        WebElement product = listProduct.stream().filter(prod ->
-        prod.findElement(By.cssSelector("b")).getText().equals(input.get("productname")))
-        .findFirst()
-        .orElse(null);
-
-        product.findElement(By.xpath("//div[@class='card-body']//child::button//child::i[@class='fa fa-shopping-cart']")).click();
-
-            System.out.println("list product" + product);
-
-            //klik cartnya
-
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
-
-            Thread.sleep(2000);
-
-            driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
+        driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 
             Thread.sleep(2000);
 

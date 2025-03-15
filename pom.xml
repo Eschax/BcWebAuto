@@ -28,4 +28,18 @@
         </dependency>
 
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <suiteXMLFiles>
+                        <suiteXMLFile>testSuites/testng.xml</suiteXMLFile>
+                    </suiteXMLFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

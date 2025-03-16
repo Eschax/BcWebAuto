@@ -22,11 +22,11 @@ public class CartPageTugas extends AbstractComponent {
         @FindBy (css = ".shopping_cart_container a.shopping_cart_link")
         WebElement GoToCartpage;
 
-        @FindBy(css = ".cart_list")
-        List<WebElement> listProducts;
-
         @FindBy(css = ".cart_footer .btn_action.checkout_button")
         WebElement checkoutButton;
+
+        @FindBy(css = ".cart_item .inventory_item_name")
+        List<WebElement> listProduct;
 
         By cartPage = By.cssSelector(".shopping_cart_container a.shopping_cart_link");
         By rowButton = By.cssSelector(".cart_list");
@@ -38,7 +38,7 @@ public class CartPageTugas extends AbstractComponent {
 
         public Boolean verifyCheckoutProduct(String productName){
             visibilityOfElementLocated(cartPage);
-            Boolean match = listProducts.stream().anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+            Boolean match = listProduct.stream().anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
     
             return match;
         }

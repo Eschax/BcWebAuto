@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -50,11 +51,10 @@ public class tugasE2Etest {
     //lanjut checkout
     CartPageTugas cartPage = new CartPageTugas(driver);
     cartPage.GoToCheckout();
-    cartPage.verifyCheckoutProduct(productName);
+    Assert.assertTrue(cartPage.verifyCheckoutProduct(productName));
     cartPage.checkout();
 
     //udah di checkout overview
-
     String FirstName = "John";
     String LastName = "Wick";
     String PostalCode = "12345";
@@ -64,6 +64,10 @@ public class tugasE2Etest {
 
     ConfrimationPageTugas confirmationPage = new ConfrimationPageTugas(driver);
     confirmationPage.finish();
+    
+    String confirmationText = confirmationPage.verifyConfirmation();
+
+    Assert.assertEquals(confirmationText, "Thank you for your order!");
 
     }
     @AfterMethod

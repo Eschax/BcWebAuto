@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -61,8 +62,9 @@ public class StandAloneTestNGImplTest {
 
             //lanjut checkout
             CartPage cartPage = new CartPage(driver);
-            cartPage.verifyCheckoutProduct(productName);    
+            Assert.assertTrue(cartPage.verifyCheckoutProduct(productName)); 
             cartPage.checkout();
+
 
             //udah di checkout overview
             String destination = "Indonesia";
@@ -76,7 +78,7 @@ public class StandAloneTestNGImplTest {
             ConfirmationPage confirmationPage = new ConfirmationPage(driver);
             String thanks = confirmationPage.getConfirmation();
 
-            System.out.println("Buyer berhasil " + thanks);
+            Assert.assertEquals(thanks, "THANKYOU FOR THE ORDER.");
     }
 
     @AfterMethod

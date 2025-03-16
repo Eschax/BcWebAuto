@@ -105,8 +105,6 @@ public class StandAloneTestNGImpl2Test {
             //pake stream buat ngambil negara yang sesuai
             WebElement countryDestination = country.stream().filter(dest ->
             dest.getText().endsWith(destination)).findFirst().orElse(null);
-            
-        
 
             countryDestination.click();
 
@@ -140,7 +138,9 @@ public class StandAloneTestNGImpl2Test {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("useremail", "aotomation@mailnesia.com");
         map.put("password", "jPF.TLurtbM@Yk5");
-        map.put("productname", "ZARA COAT 3");
+        map.put("firstName", "John");
+        map.put("LastName", "Wick");
+        map.put("PostalCode", "12345");
 
         return new Object[][] {{map}};
     }

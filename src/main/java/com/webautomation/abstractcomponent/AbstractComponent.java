@@ -12,10 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AbstractComponent {
     WebDriver driver;
 
-
     @FindBy(css = "[routerlink*='cart']")
     WebElement cartButton;
-    
 
     public AbstractComponent(WebDriver driver){
         this.driver = driver;

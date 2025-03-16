@@ -1,4 +1,4 @@
-package com.webautomation.pageobject;
+package com.webautomation.pageobjectTugas;
 
 
 import java.util.List;
@@ -42,6 +42,7 @@ public class ProductListPageTugas extends AbstractComponent {
     public void addToCart(String productName) throws InterruptedException{
         visibilityOfElementLocated(listElement);
         product = getProductByName(productName);
+        Thread.sleep(2000);
         product.findElement(cartButton).click();
     }
 }

@@ -2,13 +2,10 @@ package automation;
 
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -16,7 +13,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.webautomation.pageobject.CartPage;
+import com.webautomation.pageobject.ConfirmationPage;
 import com.webautomation.pageobject.LandingPage;
+import com.webautomation.pageobject.OrderPage;
 import com.webautomation.pageobject.ProductListPage;
 
 public class StandAloneTestNGImplTest {
@@ -44,7 +44,6 @@ public class StandAloneTestNGImplTest {
     @Test(dataProvider = "dataTestMapping")
     public void createOrder(HashMap<String, String> input) throws InterruptedException {
 
-
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userEmail")));
 
         LandingPage landingPage = new LandingPage(driver);
@@ -58,51 +57,28 @@ public class StandAloneTestNGImplTest {
         ProductListPage productListPage = new ProductListPage(driver);
         productListPage.addToCart(productName);
 
-        driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
-
-            Thread.sleep(2000);
+            driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 
             //lanjut checkout
+            CartPage cartPage = new CartPage(driver);
+            cartPage.verifyCheckoutProduct(productName);    
+            cartPage.checkout();
 
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".totalRow button")));
-
-            driver.findElement(By.cssSelector(".totalRow button")).click();
-
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[placeholder = 'Select Country']")));
-
-            Actions action = new Actions(driver);
-            //masukin nama negara
-            action.sendKeys(driver.findElement(By.cssSelector("[placeholder = 'Select Country']")), "Ind").build().perform();
-
+            //udah di checkout overview
             String destination = "Indonesia";
 
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='ng-star-inserted']")));
-
-            //lokasi negara ada disini
-            List<WebElement> country = driver.findElements(By.xpath("//span[@class='ng-star-inserted']"));
-
-            System.out.println("list country" + country);
-
-            //pake stream buat ngambil negara yang sesuai
-            WebElement countryDestination = country.stream().filter(dest ->
-            dest.getText().endsWith(destination)).findFirst().orElse(null);
-            
-        
-
-            countryDestination.click();
-
-            driver.findElement(By.cssSelector(".action__submit")).click();
+            OrderPage orderPage = new OrderPage(driver);
+            orderPage.selectCountry(destination);
+            orderPage.selectDestination(destination);
+            orderPage.submit();
 
             //ini udah di page confirmasi
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("hero-primary")));
-
-            String thanks = driver.findElement(By.className("hero-primary")).getText();
+            ConfirmationPage confirmationPage = new ConfirmationPage(driver);
+            String thanks = confirmationPage.getConfirmation();
 
             System.out.println("Buyer berhasil " + thanks);
-            
-            Thread.sleep(2000);
-            driver.quit();
     }
+
     @AfterMethod
     public void tearDown() {
         driver.quit();

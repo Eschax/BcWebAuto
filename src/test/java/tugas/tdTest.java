@@ -1,4 +1,4 @@
-package automation;
+package tugas;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -13,8 +13,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.webautomation.pageobject.LandingPageTugas;
-import com.webautomation.pageobject.ProductListPageTugas;
+import com.webautomation.pageobjectTugas.LandingPageTugas;
+import com.webautomation.pageobjectTugas.ProductListPageTugas;
 
 public class tdTest {
 

@@ -1,4 +1,4 @@
-package com.webautomation.pageobject;
+package com.webautomation.pageobjectTugas;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,9 +24,10 @@ public class LandingPageTugas {
     @FindBy(id = "login-button")
     WebElement loginBtn;
 
-    public void login(String email, String password) {
+    public void login(String email, String password) throws InterruptedException {
         username.sendKeys(email);
         userPassword.sendKeys(password);
+        Thread.sleep(2000);
         loginBtn.click();
     }
 }

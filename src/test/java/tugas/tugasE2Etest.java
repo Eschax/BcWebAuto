@@ -1,10 +1,9 @@
-package automation;
+package tugas;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,8 +12,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.webautomation.pageobject.LandingPageTugas;
-import com.webautomation.pageobject.ProductListPageTugas;
+import com.webautomation.pageobjectTugas.CartPageTugas;
+import com.webautomation.pageobjectTugas.ConfrimationPageTugas;
+import com.webautomation.pageobjectTugas.LandingPageTugas;
+import com.webautomation.pageobjectTugas.OrderPageTugas;
+import com.webautomation.pageobjectTugas.ProductListPageTugas;
 
 import java.util.HashMap;
 
@@ -41,47 +43,27 @@ public class tugasE2Etest {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".inventory_item")));
 
-        Thread.sleep(2000);
-
         String productName = "Sauce Labs Backpack";
         ProductListPageTugas productListPage = new ProductListPageTugas(driver);
         productListPage.addToCart(productName);
 
-        //login success
-
-    Thread.sleep(2000);
-
     //lanjut checkout
+    CartPageTugas cartPage = new CartPageTugas(driver);
+    cartPage.GoToCheckout();
+    cartPage.verifyCheckoutProduct(productName);
+    cartPage.checkout();
 
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".shopping_cart_container a.shopping_cart_link"))).click();
+    //udah di checkout overview
 
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".cart_list")));
+    String FirstName = "John";
+    String LastName = "Wick";
+    String PostalCode = "12345";
 
-    driver.findElement(By.cssSelector(".cart_footer .btn_action.checkout_button")).click();
+    OrderPageTugas orderPage = new OrderPageTugas(driver);
+    orderPage.order(FirstName, LastName, PostalCode);
 
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout_info")));
-
-    Thread.sleep(2000);
-
-    driver.findElement(By.id("first-name")).sendKeys("John");
-    driver.findElement(By.id("last-name")).sendKeys("Wick");
-    driver.findElement(By.id("postal-code")).sendKeys("12345");
-
-    Thread.sleep(2000);
-
-    driver.findElement(By.cssSelector(".checkout_buttons .btn_primary.cart_button")).click();
-
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".summary_info")));
-
-    driver.findElement(By.cssSelector(".summary_info .btn_action.cart_button")).click();
-
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".complete-header")));
-
-    String thanks = driver.findElement(By.cssSelector(".complete-header")).getText();
-
-    System.out.println("Buyer berhasil " + thanks);
-
-        Thread.sleep(2000);
+    ConfrimationPageTugas confirmationPage = new ConfrimationPageTugas(driver);
+    confirmationPage.finish();
 
     }
     @AfterMethod
@@ -95,6 +77,9 @@ public class tugasE2Etest {
         data1.put("username", "standard_user");
         data1.put("password", "secret_sauce");
         data1.put("productname", "Sauce Labs Backpack");
+        data1.put("firstname", "John");
+        data1.put("lastname", "Wick");
+        data1.put("postalcode", "12345");
 
         return new Object[][] {
             {data1}

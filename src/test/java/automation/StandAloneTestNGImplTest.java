@@ -44,9 +44,7 @@ public class StandAloneTestNGImplTest {
 
     @Test(dataProvider = "dataTestMapping")
     public void createOrder(HashMap<String, String> input) throws InterruptedException {
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userEmail")));
-
+        //login
         LandingPage landingPage = new LandingPage(driver);
         landingPage.login(input.get("useremail"), input.get("password"));
 

@@ -66,7 +66,6 @@ public class tugasE2Etest {
     confirmationPage.finish();
     
     String confirmationText = confirmationPage.verifyConfirmation();
-
     Assert.assertEquals(confirmationText, "Thank you for your order!");
 
     }

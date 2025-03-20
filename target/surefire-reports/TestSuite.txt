@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.903 s <<< FAILURE! - in TestSuite
+createOrder(automation.StandAloneTestNGImpl2Test)  Time elapsed: 1.197 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "product" is null
+	at automation.StandAloneTestNGImpl2Test.createOrder(StandAloneTestNGImpl2Test.java:70)
+

@@ -37,13 +37,13 @@ public class tugasE2Etest {
     }
 
     @Test(dataProvider = "getData")
-    public void tugas(HashMap<String, String> input) throws InterruptedException {
+    public void Login(HashMap<String, String> input) throws InterruptedException {
         
         LandingPageTugas landingPage = new LandingPageTugas(driver);
         landingPage.login(input.get("username"), input.get("password"));
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".inventory_item")));
-
+        //add to cart
         String productName = "Sauce Labs Backpack";
         ProductListPageTugas productListPage = new ProductListPageTugas(driver);
         productListPage.addToCart(productName);

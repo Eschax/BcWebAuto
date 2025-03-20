@@ -1,3 +1,4 @@
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\abstractcomponent\AbstractComponent.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\exploration\JavaStream.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\locator\Alert.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\locator\HandleWindow.java
@@ -5,5 +6,15 @@ D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\locator\LocatorPrac
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\locator\SeleniumIntroduction.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\locator\TugasLocator.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\Main.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobject\CartPage.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobject\ConfirmationPage.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobject\LandingPage.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobject\OrderPage.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobject\ProductListPage.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobjectTugas\CartPageTugas.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobjectTugas\ConfrimationPageTugas.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobjectTugas\LandingPageTugas.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobjectTugas\OrderPageTugas.java
+D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\pageobjectTugas\ProductListPageTugas.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\scenario\StandAloneTest.java
 D:\Bootcamp QA\WebAutomation\src\main\java\com\webautomation\scenario\tugasE2E.java

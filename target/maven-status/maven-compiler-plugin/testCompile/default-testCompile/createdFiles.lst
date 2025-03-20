@@ -1,1 +1,7 @@
+hook\Hooks.class
 automation\StandAloneTestNGImplTest.class
+automation\StandAloneTestNGImpl2Test.class
+runners\TestRunnersTesNG.class
+components\BaseTest.class
+runners\TestRunners.class
+stepdefinitions\StepdefinitionsImpl.class

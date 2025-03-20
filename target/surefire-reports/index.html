@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="automation.StandAloneTestNGImplTest" class="method navigator-link" hash-for-method="createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})">createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunnersTesNG" class="method navigator-link" hash-for-method="runScenario(&quot;Create Order Positive Case&quot;, &quot;Purchase a product from the online store&quot;)">runScenario("Create Order Positive Case", "Purchase a product from the online store")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -121,15 +121,17 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">automation.StandAloneTestNGImplTest</span>
+              <span class="class-name">runners.TestRunnersTesNG</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})">
-                  </a> <!-- createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com}) -->
-                  <span class="method-name">createOrder</span>
-                  <span class="parameters">({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})</span>
+                  <a name="runScenario(&quot;Create Order Positive Case&quot;, &quot;Purchase a product from the online store&quot;)">
+                  </a> <!-- runScenario("Create Order Positive Case", "Purchase a product from the online store") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Create Order Positive Case","Purchase a product from the online store")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,7 +147,7 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;automation.StandAloneTestNGImplTest&quot;/&gt;
+      &lt;class name=&quot;runners.TestRunnersTesNG&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -169,6 +171,14 @@
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -187,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createOrder')
-data.setCell(0, 2, 'automation.StandAloneTestNGImplTest')
-data.setCell(0, 3, 9084);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.TestRunnersTesNG')
+data.setCell(0, 3, 15367);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -220,19 +230,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">automation.StandAloneTestNGImplTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+              <div class="chronological-class-name">runners.TestRunnersTesNG</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@5017e1)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})</span>
-                <span class="method-start">6147 ms</span>
+                <span class="method-name">runScenario("Create Order Positive Case", "Purchase a product from the online store")</span>
+                <span class="method-start">785 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">15235 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">16159 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

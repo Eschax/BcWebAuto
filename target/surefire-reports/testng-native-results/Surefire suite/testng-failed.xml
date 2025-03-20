@@ -3,13 +3,13 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="runners.TestRunnersTesNG">
+      <class name="automation.StandAloneTestNGImplTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createOrder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- runners.TestRunnersTesNG -->
+      </class> <!-- automation.StandAloneTestNGImplTest -->
       <class name="automation.StandAloneTestNGImpl2Test">
         <methods>
           <include name="tearDown"/>

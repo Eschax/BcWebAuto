@@ -1,20 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 44.339 s <<< FAILURE! - in TestSuite
-createOrder(automation.StandAloneTestNGImpl2Test)  Time elapsed: 1.108 s  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 44.19 s <<< FAILURE! - in TestSuite
+createOrder(automation.StandAloneTestNGImpl2Test)  Time elapsed: 0.979 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "product" is null
 	at automation.StandAloneTestNGImpl2Test.createOrder(StandAloneTestNGImpl2Test.java:70)
 
-runScenario(runners.TestRunnersTesNG)  Time elapsed: 8.017 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element is not clickable at point (404, 743)
+createOrder(automation.StandAloneTestNGImplTest)  Time elapsed: 4.531 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".action__submit"}
   (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -> css selector: .mb-3]] -> xpath: //div[@class='card-body']//child::button//child::i[@class='fa fa-shopping-cart']]
-Session ID: b21df782ca7033687068450e161f346b
+Command: [c325f59fa21b605a8196b6f47a7168cf, findElement {using=css selector, value=.action__submit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59309}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59309/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c325f59fa21b605a8196b6f47a7168cf
+	at automation.StandAloneTestNGImplTest.createOrder(StandAloneTestNGImplTest.java:73)
 

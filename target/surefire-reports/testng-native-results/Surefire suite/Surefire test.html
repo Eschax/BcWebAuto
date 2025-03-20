@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 20 20:20:34 ICT 2025</td>
+<td>Started on:</td><td>Thu Mar 20 20:26:26 ICT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>58 seconds (58531 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43898 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;product&quot; is null
 	at automation.StandAloneTestNGImpl2Test.createOrder(StandAloneTestNGImpl2Test.java:70)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace212963786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace212963786'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;product&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1028145537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1028145537'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;product&quot; is null
 	at automation.StandAloneTestNGImpl2Test.createOrder(StandAloneTestNGImpl2Test.java:70)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -116,7 +116,58 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>1</td>
-<td>automation.StandAloneTestNGImpl2Test@402e37bc</td></tr>
+<td>automation.StandAloneTestNGImpl2Test@3cc2931c</td></tr>
+<tr>
+<td title='runners.TestRunnersTesNG.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunnersTesNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Order Positive Case", "Purchase a product from the online store"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (404, 743)
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -&gt; css selector: .mb-3]] -&gt; xpath: //div[@class=&apos;card-body&apos;]//child::button//child::i[@class=&apos;fa fa-shopping-cart&apos;]]
+Session ID: b21df782ca7033687068450e161f346b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.webautomation.pageobject.ProductListPage.addToCart(ProductListPage.java:46)
+	at stepdefinitions.StepdefinitionsImpl.addProductToCart(StepdefinitionsImpl.java:43)
+	at ✽.Buyer add a product ZARA COAT 3 to the cart(file:///D:/Bootcamp%20QA/WebAutomation/src/test/resources/features/CreateOrder.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace140040372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace140040372'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (404, 743)
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -&gt; css selector: .mb-3]] -&gt; xpath: //div[@class=&apos;card-body&apos;]//child::button//child::i[@class=&apos;fa fa-shopping-cart&apos;]]
+Session ID: b21df782ca7033687068450e161f346b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.webautomation.pageobject.ProductListPage.addToCart(ProductListPage.java:46)
+	at stepdefinitions.StepdefinitionsImpl.addProductToCart(StepdefinitionsImpl.java:43)
+	at ✽.Buyer add a product ZARA COAT 3 to the cart(file:///D:/Bootcamp%20QA/WebAutomation/src/test/resources/features/CreateOrder.feature:15)
+</pre></div></td>
+<td>8</td>
+<td>runners.TestRunnersTesNG@5bd03f44</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -127,20 +178,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automation.StandAloneTestNGImplTest.createOrder()'><b>createOrder</b><br>Test class: automation.StandAloneTestNGImplTest<br>Parameters: {productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com}</td>
-<td></td>
-<td>6</td>
-<td>automation.StandAloneTestNGImplTest@7a4ccb53</td></tr>
-<tr>
 <td title='tugas.tdTest.tugas()'><b>tugas</b><br>Test class: tugas.tdTest<br>Parameters: {productname=Sauce Labs Backpack, password=secret_sauce, username=standard_user}</td>
 <td></td>
 <td>4</td>
-<td>tugas.tdTest@18ce0030</td></tr>
+<td>tugas.tdTest@29626d54</td></tr>
 <tr>
-<td title='runners.TestRunnersTesNG.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunnersTesNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Order Positive Case", "Purchase a product from the online store"</td>
+<td title='automation.StandAloneTestNGImplTest.createOrder()'><b>createOrder</b><br>Test class: automation.StandAloneTestNGImplTest<br>Parameters: {productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com}</td>
 <td></td>
-<td>18</td>
-<td>runners.TestRunnersTesNG@56a6d5a6</td></tr>
+<td>5</td>
+<td>automation.StandAloneTestNGImplTest@70e8f8e</td></tr>
 </table><p>
 </body>
 </html>

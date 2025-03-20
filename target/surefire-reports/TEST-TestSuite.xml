@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="58.903" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="44.339" tests="4" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Escha\AppData\Local\Temp\surefire9050534074519873719\surefirebooter3411214971660236674.jar C:\Users\Escha\AppData\Local\Temp\surefire9050534074519873719 2025-03-20T20-20-34_262-jvmRun1 surefire14883576611474353978tmp surefire_013185769600436901719tmp"/>
+    <property name="sun.java.command" value="C:\Users\Escha\AppData\Local\Temp\surefire7309611713724340286\surefirebooter7034081198396014911.jar C:\Users\Escha\AppData\Local\Temp\surefire7309611713724340286 2025-03-20T20-26-25_313-jvmRun1 surefire8911774596981036051tmp surefire_010979563677133387765tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Bootcamp QA\WebAutomation\target\test-classes;D:\Bootcamp QA\WebAutomation\target\classes;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\Escha\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\Escha\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Escha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Escha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Escha\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Escha\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Escha\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\Escha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\Escha\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\Escha\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\Escha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\Escha\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Escha\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Escha\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Escha\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\Escha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-junit\7.21.1\cucumber-junit-7.21.1.jar;C:\Users\Escha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Escha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\Escha\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\Escha\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\Escha\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\Escha\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Escha\.m2\repository\io\cucumber\cucumber-testng\7.20.1\cucumber-testng-7.20.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Escha\AppData\Local\Temp\surefire9050534074519873719\surefirebooter3411214971660236674.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Escha\AppData\Local\Temp\surefire7309611713724340286\surefirebooter7034081198396014911.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
@@ -59,18 +59,87 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="createOrder" classname="automation.StandAloneTestNGImpl2Test" time="1.197">
+  <testcase name="createOrder" classname="automation.StandAloneTestNGImpl2Test" time="1.108">
     <failure message="Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;product&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "product" is null
 	at automation.StandAloneTestNGImpl2Test.createOrder(StandAloneTestNGImpl2Test.java:70)
 </failure>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Mar 20, 2025 8:20:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 20, 2025 8:26:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
 ]]></system-err>
   </testcase>
-  <testcase name="createOrder" classname="automation.StandAloneTestNGImplTest" time="6.39"/>
-  <testcase name="runScenario" classname="runners.TestRunnersTesNG" time="18.269"/>
-  <testcase name="tugas" classname="tugas.tdTest" time="4.943"/>
+  <testcase name="createOrder" classname="automation.StandAloneTestNGImplTest" time="5.257"/>
+  <testcase name="runScenario" classname="runners.TestRunnersTesNG" time="8.017">
+    <failure message="element click intercepted: Element is not clickable at point (404, 743)&#10;  (Session info: chrome=134.0.6998.89)&#10;Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -&gt; css selector: .mb-3]] -&gt; xpath: //div[@class=&apos;card-body&apos;]//child::button//child::i[@class=&apos;fa fa-shopping-cart&apos;]]&#10;Session ID: b21df782ca7033687068450e161f346b" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (404, 743)
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -> css selector: .mb-3]] -> xpath: //div[@class='card-body']//child::button//child::i[@class='fa fa-shopping-cart']]
+Session ID: b21df782ca7033687068450e161f346b
+</failure>
+    <system-out><![CDATA[
+Scenario Outline: Create Order Positive Case                                                   &amp#27;[90m# src/test/resources/features/CreateOrder.feature:22&amp#27;[0m
+Browser name is: chrome
+driver adalah ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mBuyer landing to ecommerce&amp#27;[0m                                                             &amp#27;[90m# stepdefinitions.StepdefinitionsImpl.landingPage()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mBuyer login to the website email &amp#27;[0m&amp#27;[32m&amp#27;[1maotomation@mailnesia.com&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1mjPF.TLurtbM@Yk5&amp#27;[0m &amp#27;[90m# stepdefinitions.StepdefinitionsImpl.buyerLogin(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mBuyer add a product &amp#27;[0m&amp#27;[31m&amp#27;[1mZARA COAT 3&amp#27;[0m&amp#27;[31m to the cart&amp#27;[0m                                             &amp#27;[90m# stepdefinitions.StepdefinitionsImpl.addProductToCart(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (404, 743)
+        (Session info: chrome=134.0.6998.89)
+      Build info: version: '4.29.0', revision: '5fc1ec94cb'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -> css selector: .mb-3]] -> xpath: //div[@class='card-body']//child::button//child::i[@class='fa fa-shopping-cart']]
+      Session ID: b21df782ca7033687068450e161f346b
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+      	at com.webautomation.pageobject.ProductListPage.addToCart(ProductListPage.java:46)
+      	at stepdefinitions.StepdefinitionsImpl.addProductToCart(StepdefinitionsImpl.java:43)
+      	at ✽.Buyer add a product ZARA COAT 3 to the cart(file:///D:/Bootcamp%20QA/WebAutomation/src/test/resources/features/CreateOrder.feature:15)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mBuyer checkout product &amp#27;[0m&amp#27;[36m&amp#27;[1mZARA COAT 3&amp#27;[0m                                                       &amp#27;[90m# stepdefinitions.StepdefinitionsImpl.checkoutProduct(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mBuyer place order &amp#27;[0m&amp#27;[36m&amp#27;[1mIndonesia&amp#27;[0m                                                              &amp#27;[90m# stepdefinitions.StepdefinitionsImpl.placeOrder(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mBuyer will see message is displayed on confirmation page &amp#27;[0m&amp#27;[36m&amp#27;[1mTHANKYOU FOR THE ORDER.&amp#27;[0m        &amp#27;[90m# stepdefinitions.StepdefinitionsImpl.orderConfirmation(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Mar 20, 2025 8:26:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+Mar 20, 2025 8:27:00 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
+
+]]></system-err>
+  </testcase>
+  <testcase name="tugas" classname="tugas.tdTest" time="4.931"/>
 </testsuite>

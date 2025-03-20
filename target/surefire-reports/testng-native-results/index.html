@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="automation.StandAloneTestNGImpl2Test" class="method navigator-link" hash-for-method="createOrder({firstName=John, PostalCode=12345, password=jPF.TLurtbM@Yk5, LastName=Wick, useremail=aotomation@mai...)">createOrder({firstName=John, PostalCode=12345, password=jPF.TLurtbM@Yk5, LastName=Wick, useremail=aotomation@mai...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunnersTesNG" class="method navigator-link" hash-for-method="runScenario(&quot;Create Order Positive Case&quot;, &quot;Purchase a product from the online store&quot;)">runScenario("Create Order Positive Case", "Purchase a product from the online store")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -118,11 +123,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="automation.StandAloneTestNGImplTest" class="method navigator-link" hash-for-method="createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})">createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="runners.TestRunnersTesNG" class="method navigator-link" hash-for-method="runScenario(&quot;Create Order Positive Case&quot;, &quot;Purchase a product from the online store&quot;)">runScenario("Create Order Positive Case", "Purchase a product from the online store")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -145,6 +145,47 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">runners.TestRunnersTesNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Create Order Positive Case&quot;, &quot;Purchase a product from the online store&quot;)">
+                  </a> <!-- runScenario("Create Order Positive Case", "Purchase a product from the online store") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Create Order Positive Case","Purchase a product from the online store")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (404, 743)
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b21df782ca7033687068450e161f346b, clickElement {id=f.4AA89DDF658F89EDE18B0E34195EA74E.d.B76865859E4F1AC5B6E0E2CA78502E06.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Escha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62943/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (b21df782ca7033687068450e161f346b)] -&gt; css selector: .mb-3]] -&gt; xpath: //div[@class=&apos;card-body&apos;]//child::button//child::i[@class=&apos;fa fa-shopping-cart&apos;]]
+Session ID: b21df782ca7033687068450e161f346b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.webautomation.pageobject.ProductListPage.addToCart(ProductListPage.java:46)
+	at stepdefinitions.StepdefinitionsImpl.addProductToCart(StepdefinitionsImpl.java:43)
+	at ✽.Buyer add a product ZARA COAT 3 to the cart(file:///D:/Bootcamp%20QA/WebAutomation/src/test/resources/features/CreateOrder.feature:15)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">automation.StandAloneTestNGImpl2Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -163,24 +204,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runners.TestRunnersTesNG</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Create Order Positive Case&quot;, &quot;Purchase a product from the online store&quot;)">
-                  </a> <!-- runScenario("Create Order Positive Case", "Purchase a product from the online store") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Create Order Positive Case","Purchase a product from the online store")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -280,24 +303,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestRunnersTesNG')
-data.setCell(0, 3, 18269);
+data.setCell(0, 3, 8015);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createOrder')
 data.setCell(1, 2, 'automation.StandAloneTestNGImplTest')
-data.setCell(1, 3, 6390);
+data.setCell(1, 3, 5257);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'tugas')
 data.setCell(2, 2, 'tugas.tdTest')
-data.setCell(2, 3, 4943);
+data.setCell(2, 3, 4931);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'createOrder')
 data.setCell(3, 2, 'automation.StandAloneTestNGImpl2Test')
-data.setCell(3, 3, 1187);
+data.setCell(3, 3, 1093);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -332,56 +355,58 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createOrder({firstName=John, PostalCode=12345, password=jPF.TLurtbM@Yk5, LastName=Wick, useremail=aotomation@mai...)</span>
-                <span class="method-start">12777 ms</span>
+                <span class="method-start">9549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13973 ms</span>
+                <span class="method-start">10657 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation.StandAloneTestNGImplTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14199 ms</span>
+                <span class="method-start">10868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createOrder({productname=ZARA COAT 3, password=jPF.TLurtbM@Yk5, useremail=aotomation@mailnesia.com})</span>
-                <span class="method-start">22577 ms</span>
+                <span class="method-start">19473 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28968 ms</span>
+                <span class="method-start">24730 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.TestRunnersTesNG</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2596d7f4)</span>
-                <span class="method-start">29247 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4c447c09)</span>
+                <span class="method-start">24993 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Create Order Positive Case", "Purchase a product from the online store")</span>
-                <span class="method-start">29863 ms</span>
+                <span class="method-start">25936 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">48134 ms</span>
+                <span class="method-start">33955 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tugas.tdTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">48198 ms</span>
+                <span class="method-start">34023 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tugas({productname=Sauce Labs Backpack, password=secret_sauce, username=standard_user})</span>
-                <span class="method-start">53305 ms</span>
+                <span class="method-start">38709 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58249 ms</span>
+                <span class="method-start">43641 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -7,7 +7,7 @@
             <classes>
                 <!-- <class name="automation.StandAloneTesNGImplTest" />
                 <class name="automation.StandAloneTesNGImpl2Test" /> -->
-                <class name="runners.TestRunnerTestNg"/>
+                <class name="runners.TestRunnersTestNg"/>
             </classes>
         </test>
     </suite>

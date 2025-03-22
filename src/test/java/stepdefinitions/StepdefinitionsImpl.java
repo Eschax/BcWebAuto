@@ -2,7 +2,6 @@ package stepdefinitions;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -13,14 +12,13 @@ import com.webautomation.pageobject.LandingPage;
 import com.webautomation.pageobject.OrderPage;
 import com.webautomation.pageobject.ProductListPage;
 
-import components.BaseTest;
 import hook.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class StepdefinitionsImpl extends BaseTest {
+public class StepdefinitionsImpl {
 
     WebDriver driver;
     WebDriverWait wait;
@@ -41,7 +39,7 @@ public class StepdefinitionsImpl extends BaseTest {
     public void addProductToCart(String productName) throws InterruptedException{
         ProductListPage productListPage = new ProductListPage(driver);
         productListPage.addToCart(productName);
-        driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
+        productListPage.goToCart();
 
     }
     @And("^Buyer checkout product (.+)$")

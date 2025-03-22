@@ -42,7 +42,7 @@ public class Hooks {
         }
         driver.get("https://rahulshettyacademy.com/client");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        // driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     //close driver

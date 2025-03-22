@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.941" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-22T05:30:06.279903800Z">
-<testcase classname="Purchase a product from the online store" name="Create Order Positive Case - #1.1" time="11.798">
+<testsuite name="Cucumber" time="10.682" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-22T06:21:05.035462400Z">
+<testcase classname="Purchase a product from the online store" name="Create Order Positive Case - #1.1" time="10.566">
 <system-out><![CDATA[
 Given Buyer landing to ecommerce............................................passed
 Given Buyer login to the website email aotomation@mailnesia.com and password jPF.TLurtbM@Yk5.passed

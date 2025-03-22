@@ -36,8 +36,8 @@ public class StandAloneTestNGImplTest {
         System.setProperty("webdriver.chrome.driver", "C:/Windows/chromedriver.exe");
 
         driver = new ChromeDriver();
-        driver.manage().window().maximize(); // Maximize window
         driver.get("https://rahulshettyacademy.com/client");
+        driver.manage().window().maximize(); // Maximize window
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     }

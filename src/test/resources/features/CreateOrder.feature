@@ -20,4 +20,4 @@ Scenario Outline: Create Order Positive Case
     Examples:
     |email                      |password        |product_name    |destination  |
     |aotomation@mailnesia.com   |jPF.TLurtbM@Yk5 |ZARA COAT 3     |Indonesia    |
-    
+    |aotomation@mailnesia.com   |jPF.TLurtbM@Yk5 |ZARA COAT 3     |Indonesia    |

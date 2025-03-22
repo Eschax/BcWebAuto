@@ -1,7 +1,12 @@
 com\webautomation\exploration\JavaStream.class
+com\webautomation\pageobject\ConfirmationPage.class
+com\webautomation\pageobject\LandingPage.class
 com\webautomation\locator\TugasLocator.class
 com\webautomation\Main.class
-com\webautomation\scenario\tugasE2E.class
+com\webautomation\abstractcomponent\AbstractComponent.class
+com\webautomation\pageobject\CartPage.class
+com\webautomation\pageobject\ProductListPage.class
+com\webautomation\pageobject\OrderPage.class
 com\webautomation\locator\SeleniumIntroduction.class
 com\webautomation\locator\LocatorPracticeAI.class
 com\webautomation\scenario\StandAloneTest.class
